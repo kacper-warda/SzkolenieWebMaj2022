@@ -17,7 +17,7 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark navbar-static-top" role="navigation">
-    <a class="navbar-brand" href="/#"><asset:image src="grails.svg" alt="Grails Logo"/></a>
+%{--    <a class="navbar-brand" href="/#"><image src="https://a.allegroimg.com/original/03efba/0c2bc08c4108831505c98f16fae0" alt="Grails Logo"></image></a>--}%
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -58,15 +58,6 @@
         <p>Get feedback and share your experience with other Grails developers in the community <a href="https://grails-slack.cfapps.io" target="_blank">Slack channel</a>.</p>
     </div>
 </div>
-
-<g:each in="${[1,2,3]}" var="num">
-   <p>Number ${num}</p>
-</g:each>
-
-<g:set var="num" value="${1}" />
-<g:while test="${num < 500 }">
-    <p>Number ${num++}</p>
-</g:while>
 
 <div id="spinner" class="spinner" style="display:none;">
     <g:message code="spinner.alt" default="Loading&hellip;"/>
