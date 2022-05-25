@@ -23,6 +23,7 @@ apply plugin:"org.grails.grails-gsp"
 
 repositories {
     maven { url "https://repo.grails.org/grails/core" }
+    mavenCentral()
 }
 
 configurations {
@@ -34,6 +35,9 @@ configurations {
 
 dependencies {
     developmentOnly("org.springframework.boot:spring-boot-devtools")
+    compile 'org.grails.plugins:spring-security-core:4.0.0'
+    compile 'org.grails:grails-datastore-rest-client:6.1.9.RELEASE'
+    compile 'org.grails.plugins:spring-security-ui:4.0.0.M1'
     compile "org.grails.plugins:postgresql-extensions:7.0.0"
     compile "org.springframework.boot:spring-boot-starter-logging"
     compile "org.springframework.boot:spring-boot-autoconfigure"

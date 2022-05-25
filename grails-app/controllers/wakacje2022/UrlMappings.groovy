@@ -9,7 +9,7 @@ class UrlMappings {
             }
         }
 
-        "/pogoda"(controller: "weather", action: "index")
+        "/trip"(controller: "trip", action: "index")
 
         "/"(view: "/index")
         "500"(view: '/error')

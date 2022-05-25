@@ -7,6 +7,12 @@ import wakacje2022.core.Trip
 class BasicController {
 
     InterestingPlacesService interestingPlacesService
+    WeatherService weatherService
+
+    def getWeather() {
+        render weatherService.serviceMethod()
+
+    }
 
     def index() {
 
